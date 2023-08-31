@@ -9,7 +9,8 @@
   <body>
     <nav id="navbar">
       <header>JavaScript Documentation</header>
-      <ul>
+      <!-- Desktop Navigation -->
+      <ul class="desktop-nav">
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
         <li><a class="nav-link" href="#Javascript_and_java">JavaScript and Java</a></li>
@@ -17,9 +18,23 @@
         <li><a class="nav-link" href="#Variables">Variables</a></li>
         <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
         <li><a class="nav-link" href="#Variable_scopes">Variable scopes</a></li>
-
+        <p>All information was taken from the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN Javascript Guide</a>.</p>
       </ul>
+      <!-- End Desktop Navigation -->
+      <!-- Mobile Navigation -->
+      <select class="mobile-nav" onchange="window.location = this.value;">
+        <option value="#">(Navigate)</option>
+        <option value="#Introduction">Introduction</option>
+        <option value="#What_you_should_already_know">What you should already know</option>
+        <option value="#Javascript_and_java">JavaScript and Java</option>
+        <option value="#Hello_world">Hello World</option>
+        <option value="#Variables">Variables</option>
+        <option value="#Declaring_variables">Declaring variables</option>
+        <option value="#Variable_scopes">Variable scopes</option>
+      </select>
+      <!-- End Mobile Navigation -->
     </nav>
+    
     <main id="main-doc">
       <section id="Introduction" class="main-section">
         <header>Introduction</header>
@@ -134,6 +149,7 @@
            </p>
         </article>
       </section>
+      <p>All information was taken from the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN Javascript Guide</a>.</p>
     </main>
   </body>
 </html>
